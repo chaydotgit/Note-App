@@ -27,13 +27,13 @@ namespace Note_App
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btNew_Click(object sender, EventArgs e)
         {
             txtTitle.Clear();
             txtNote.Clear();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btSave_Click(object sender, EventArgs e)
         {
             table.Rows.Add(txtTitle.Text, txtNote.Text);
 
@@ -41,7 +41,7 @@ namespace Note_App
             txtNote.Clear();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void btRead_Click(object sender, EventArgs e)
         {
             int index = dataGridView1.CurrentCell.RowIndex;
 
@@ -52,7 +52,7 @@ namespace Note_App
             }
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btDelete_Click(object sender, EventArgs e)
         {
             int index = dataGridView1.CurrentCell.RowIndex;
 
